@@ -47,21 +47,21 @@
 //Задача 1: Задайте значения M и N. Напишите программу, которая выведет все натуральные числа 
 // в промежутке от M до N. Использовать рекурсию, не использовать циклы.
 
-void ShowNumbers(int M, int N)
-{
-    if(M == N)
-    {
-        Console.Write(M);
-        return;
-    }
-    Console.Write(M + " ");
-    ShowNumbers(M + 1, N);
-}
-Console.Write("Введите натуральное число M: ");
-int M = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите натуральное число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-ShowNumbers(M, N);
+// void ShowNumbers(int M, int N)
+// {
+//     if(M == N)
+//     {
+//         Console.Write(M);
+//         return;
+//     }
+//     Console.Write(M + " ");
+//     ShowNumbers(M + 1, N);
+// }
+// Console.Write("Введите натуральное число M: ");
+// int M = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите натуральное число N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// ShowNumbers(M, N);
 
 
 
@@ -69,4 +69,23 @@ ShowNumbers(M, N);
 // Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 29
 
+Console.Write("Введите натуральное число n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите натуральное число m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+
+int SolveAkkermanFunction(int n, int m)
+{
+    if (n == 0)
+    {
+        return m + 1;
+    }
+    else if (m == 0)
+    {
+        return SolveAkkermanFunction(n - 1, 1);
+    }
+    return SolveAkkermanFunction(n - 1, SolveAkkermanFunction(n, m - 1)); 
+}
+
+Console.WriteLine(SolveAkkermanFunction(n, m));
 
