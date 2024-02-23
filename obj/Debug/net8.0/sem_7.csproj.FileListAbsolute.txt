@@ -1,0 +1,14 @@
+/Users/amy/Documents/GeekBrains/sem_7/bin/Debug/net8.0/sem_7
+/Users/amy/Documents/GeekBrains/sem_7/bin/Debug/net8.0/sem_7.deps.json
+/Users/amy/Documents/GeekBrains/sem_7/bin/Debug/net8.0/sem_7.runtimeconfig.json
+/Users/amy/Documents/GeekBrains/sem_7/bin/Debug/net8.0/sem_7.dll
+/Users/amy/Documents/GeekBrains/sem_7/bin/Debug/net8.0/sem_7.pdb
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.AssemblyInfoInputs.cache
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.AssemblyInfo.cs
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.csproj.CoreCompileInputs.cache
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.dll
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/refint/sem_7.dll
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.pdb
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.genruntimeconfig.cache
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/ref/sem_7.dll
