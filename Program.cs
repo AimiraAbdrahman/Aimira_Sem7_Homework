@@ -69,23 +69,61 @@
 // Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 29
 
-Console.Write("Введите натуральное число n: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите натуральное число m: ");
-int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите натуральное число n: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите натуральное число m: ");
+// int m = Convert.ToInt32(Console.ReadLine());
 
-int SolveAkkermanFunction(int n, int m)
+// int SolveAkkermanFunction(int n, int m)
+// {
+//     if (n == 0)
+//     {
+//         return m + 1;
+//     }
+//     else if (m == 0)
+//     {
+//         return SolveAkkermanFunction(n - 1, 1);
+//     }
+//     return SolveAkkermanFunction(n - 1, SolveAkkermanFunction(n, m - 1)); 
+// }
+
+// Console.WriteLine(SolveAkkermanFunction(n, m));
+
+
+
+// Задача 3: Задайте произвольный массив. Выведете его элементы, начиная с конца. 
+// Использовать рекурсию, не использовать циклы.
+// [1, 2, 5, 0, 10, 34] => 34 10 0 5 2 1
+
+int[] CreateArray (int size)
 {
-    if (n == 0)
+    int[] array = new int[size];
+    for (int i = 0; i < array.Length; i++)
     {
-        return m + 1;
-    }
-    else if (m == 0)
-    {
-        return SolveAkkermanFunction(n - 1, 1);
-    }
-    return SolveAkkermanFunction(n - 1, SolveAkkermanFunction(n, m - 1)); 
+        array[i] = new Random().Next(1, 101);
+    } 
+    return array;
 }
 
-Console.WriteLine(SolveAkkermanFunction(n, m));
+Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int[] initialArr = CreateArray(N);
+Console.WriteLine($"Массив: [ {string.Join("; ", initialArr)} ]");
+
+int j = initialArr.Length - 1;
+void PrintReverseArray (int[] array, int j)
+{
+    if (j == 0)
+    {
+        Console.Write(array[j] + " ");
+        return;
+    }
+    Console.Write(array[j] + " ");
+    PrintReverseArray(array, j - 1);
+}
+
+PrintReverseArray(initialArr, j);
+
+
+
 
