@@ -57,5 +57,16 @@ void ShowNumbers(int M, int N)
     Console.Write(M + " ");
     ShowNumbers(M + 1, N);
 }
-ShowNumbers(4, 8);
+Console.Write("Введите натуральное число M: ");
+int M = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите натуральное число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+ShowNumbers(M, N);
+
+
+
+// Задача 2: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
+// Даны два неотрицательных числа m и n.
+// m = 2, n = 3 -> A(m,n) = 29
+
 

@@ -12,3 +12,4 @@
 /Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.pdb
 /Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.genruntimeconfig.cache
 /Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/ref/sem_7.dll
+/Users/amy/Documents/GeekBrains/sem_7/obj/Debug/net8.0/sem_7.sourcelink.json
